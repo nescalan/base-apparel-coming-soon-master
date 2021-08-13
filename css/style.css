@@ -14,13 +14,10 @@ body {
 }
 
 .container {
-  border: 1px solid red;
   width: 375px;
   height: 780px;
-  padding-right: 30px;
-  padding-left: 30px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 0 30px;
+  margin: 0 auto;
   background-color: #fff7f8;
 }
 
@@ -57,7 +54,7 @@ body {
 .flex-seccion .span {
   display: inline-block;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 40px;
   text-transform: uppercase;
   letter-spacing: 10px;
 }
@@ -67,17 +64,66 @@ body {
 }
 
 .flex-seccion .span-2 {
-  margin: 15px 30px;
+  line-height: 45px;
   font-weight: 600;
   color: #000;
+}
+
+.flex-seccion .span-height {
+  display: inline-block;
+  margin-top: 10px;
+  line-height: 23px;
 }
 
 .flex-email {
   width: 310px;
   height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border: 1px solid #baa5a2;
   border-radius: 30px;
   margin-top: 40px;
+}
+
+.flex-email input {
+  border: none;
+  outline: none;
+}
+
+.flex-email input::-webkit-input-placeholder {
+  font-size: 1.1rem;
+  color: #baa5a2;
+}
+
+.flex-email input:-ms-input-placeholder {
+  font-size: 1.1rem;
+  color: #baa5a2;
+}
+
+.flex-email input::-ms-input-placeholder {
+  font-size: 1.1rem;
+  color: #baa5a2;
+}
+
+.flex-email input::placeholder {
+  font-size: 1.1rem;
+  color: #baa5a2;
+}
+
+.flex-email__button {
+  margin-top: -1px;
+  width: 67px;
+  height: inherit;
+  border: 1px solid #f4a5a8;
+  border-radius: 30px;
+  background-color: #f4a5a8;
+  -webkit-box-shadow: 1px 1px 10px 0.5px #ce9797;
+          box-shadow: 1px 1px 10px 0.5px #ce9797;
 }
 
 .attribution {
