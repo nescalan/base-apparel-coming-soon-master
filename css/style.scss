@@ -45,18 +45,29 @@ body {
 .container {
   width: $mobile;
   height: 780px;
-  padding: 0 30px;
+  padding: 30px 30px;
   margin: 0 auto;
   background-color: #fff7f8;
 }
-.logo img {
-  width: 100px;
-  margin-bottom: 30px;
-}
+
 .flex {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .logo img {
+    width: 100px;
+    margin-bottom: 30px;
+  }
+
+  & .banner-1 {
+    width: $mobile;
+    margin-bottom: 30px;
+  }
+
+  & .banner-2 {
+    display: none;
+  }
 
   &-seccion {
     height: 375px;
@@ -147,6 +158,39 @@ body {
 
 @media (min-width: 1200px) {
   .container {
+    border: 1px solid red;
+    width: $desktop;
     max-width: 1140px;
+  }
+  .flex {
+    border: 1px solid blue;
+    flex-direction: row;
+    .logo {
+      width: 30%;
+      display: inline-block;
+      order: 1;
+    }
+    .logo img {
+      width: 160px;
+      margin: 30px 0 30px 0;
+    }
+
+    &-hero {
+      border: 2px dotted red;
+      order: 3;
+      .banner-1 {
+        display: none;
+      }
+      .banner-2 {
+        display: block;
+        // width: 610px;
+        // height: 100px;
+      }
+    }
+    &-seccion {
+      border: 2px solid orange;
+      width: 60%;
+      order: 2;
+    }
   }
 }
