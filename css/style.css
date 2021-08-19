@@ -127,11 +127,16 @@ body {
   margin-top: -1px;
   width: 67px;
   height: inherit;
-  border: 1px solid #f4a5a8;
+  border: 1px solid #f96262;
   border-radius: 30px;
-  background-color: #f4a5a8;
+  background-color: #f96262;
   -webkit-box-shadow: 1px 1px 10px 0.5px #ce9797;
           box-shadow: 1px 1px 10px 0.5px #ce9797;
+}
+
+.flex-email__button:hover {
+  background-color: #f4a5a8;
+  border: 1px solid #f4a5a8;
 }
 
 .attribution {
