@@ -1,0 +1,17 @@
+.wrap {
+  white-space: wrap;
+}
+.searchbox,
+.nav {
+  /*display: inline-block;
+      *display:inline;/*for IE 7 */
+  *zoom: 1; /*for IE 7 */
+  vertical-align: top;
+}
+.searchbox {
+  background-color: #ff0;
+}
+
+.nav {
+  background-color: red;
+}
