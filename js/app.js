@@ -5,12 +5,16 @@ const validadCorreo = () => {
     /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
   const esValido = expReg.test(correo);
   console.log(esValido);
+  const spanError = document.querySelector("#flex-email__error");
+
+  if (spanError != null) {
+    spanError.innerHTML = "";
+  }
 
   if (esValido) {
     alert("La dirección de email " + correo + " es correcta.");
   } else {
     // nodos del DOM
-    const spanError = document.querySelector("#flex-email__error");
     const newElement = document.createElement("p");
     const errorMessage = document.createTextNode(
       "Please, provide a valid mail"
