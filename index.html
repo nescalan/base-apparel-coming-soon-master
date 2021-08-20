@@ -24,12 +24,21 @@
   </head>
   <body>
     <div class="container">
-      <div class="logo">
+      <nav class="logo">
         <img src="images/logo.svg" alt="Base Apparel branded logo" />
-      </div>
-      <div class="flex">
+      </nav>
+      <main class="flex">
         <div class="flex-hero">
-          <img src="images/hero-mobile.jpg" alt="Base Apparel image hero" />
+          <img
+            class="banner-1"
+            src="images/hero-mobile.jpg"
+            alt="Base Apparel image hero"
+          />
+          <img
+            class="banner-2"
+            src="images/hero-desktop.jpg"
+            alt="Base Apparel image hero"
+          />
         </div>
         <section class="flex-seccion">
           <p>
@@ -42,8 +51,8 @@
             </span>
           </p>
           <div class="flex-email">
-            <input type="text" placeholder="Email Address" />
-            <button class="flex-email__button">
+            <input id="correo" type="text" placeholder="Email Address" />
+            <button onclick="validadCorreo()" class="flex-email__button">
               <img
                 class="flex-email__img"
                 src="images/icon-arrow.svg"
@@ -51,17 +60,20 @@
               />
             </button>
           </div>
+          <span id="flex-email__error"></span>
         </section>
-      </div>
-
-      <footer>
-        <p class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="#">Ing. Nelson González</a>.
-        </p>
-      </footer>
+      </main>
     </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Ing. Nelson González</a>.
+      </p>
+    </footer>
+
+    <script src="js/app.js"></script>
   </body>
 </html>
