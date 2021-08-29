@@ -18,7 +18,7 @@ const validadCorreo = () => {
     // nodos del DOM
     const newElement = document.createElement("p");
     const errorMessage = document.createTextNode(
-      "Please, provide a valid mail"
+      "Please, provide a valid e-mail"
     );
     errorMessage.style = "color: red";
     newElement.appendChild(errorMessage);
